@@ -18,8 +18,8 @@ var PathService = (function () {
     PathService.prototype.toPosix = function (filePath) {
         return filePath.replace(/\\/g, '/');
     };
-    PathService.prototype.init = function (projectRoot) {
-        this.projectRoot = projectRoot;
+    PathService.prototype.init = function (projectAbsoluteRoot) {
+        this.projectRoot = projectAbsoluteRoot;
     };
     /**
      * Throws if one attempts to use a path from outside the project.

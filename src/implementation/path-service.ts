@@ -19,8 +19,8 @@ export class PathService implements IPathService {
     constructor(
     ) { }
 
-    public init(projectRoot: string): void {
-        this.projectRoot = projectRoot;
+    public init(projectAbsoluteRoot: string): void {
+        this.projectRoot = projectAbsoluteRoot;
     }
 
     /**
