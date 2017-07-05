@@ -1,0 +1,32 @@
+{
+  "name": "strong-paths",
+  "version": "1.0.0",
+  "description": "Inversion of dependency-style strongly typed filepaths",
+  "main": "./build/src/index.js",
+  "typings": "./src/index.ts",
+  "scripts": {
+    "test": "tsc && jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megatron0000/strong-paths.git"
+  },
+  "author": "Vitor Arruda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/megatron0000/strong-paths/issues"
+  },
+  "homepage": "https://github.com/megatron0000/strong-paths#readme",
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "inversify": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^3.0.3",
+    "@types/jasmine": "^2.5.53",
+    "@types/node": "^8.0.7",
+    "jasmine": "^2.6.0",
+    "jasmine-spec-reporter": "^4.1.1",
+    "reflect-metadata": "^0.1.10"
+  }
+}
