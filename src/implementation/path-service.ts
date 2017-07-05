@@ -69,4 +69,9 @@ export class PathService implements IPathService {
 
         return new AbsolutePath(path.normalize(absolutePath), this.projectRoot, this);
     }
+
+    public getRoot(): IAbsolutePath {
+        return this.createAbsolute(path.resolve(this.projectRoot));
+    }
+
 }

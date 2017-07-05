@@ -53,6 +53,9 @@ var PathService = (function () {
         }
         return new absolute_path_1.AbsolutePath(path.normalize(absolutePath), this.projectRoot, this);
     };
+    PathService.prototype.getRoot = function () {
+        return this.createAbsolute(path.resolve(this.projectRoot));
+    };
     return PathService;
 }());
 PathService = __decorate([

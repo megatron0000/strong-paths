@@ -4,4 +4,5 @@ export interface IPathService {
     init(projectRoot: string): void;
     createInternal(projectRelativePath: string): IInternalPath;
     createAbsolute(absolutePath: string): IAbsolutePath;
+    getRoot(): IAbsolutePath;
 }
